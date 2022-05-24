@@ -21,7 +21,8 @@ function ModelDetail() {
   return (
     <Canvas>
       <ambientLight intensity={0.5} />
-      <directionalLight color="white" position={[0, 0, 0]} />
+      <directionalLight color="white" position={[1, 1, 1]} />
+      <directionalLight color="white" position={[-1, -1, -1]} />
       <fog attach="fog" args={['#101010', 0, 10]} />
       <spotLight position={[10, 20, 10]} angle={0.15} penumbra={1} shadow-mapSize={[512, 512]} castShadow />
       <Suspense fallback={null}>
