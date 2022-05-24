@@ -7,7 +7,7 @@ import { useParams } from 'react-router-dom';
 
 function ModelGltf(props) {
   const ref = useRef();
-  const gltf = useLoader(GLTFLoader, `/models/${props.modelId}.gltf`);
+  const gltf = useLoader(GLTFLoader, `${props.modelId}.gltf`);
   const { viewport } = useThree()
   
   return (
