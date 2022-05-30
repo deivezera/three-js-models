@@ -14,7 +14,7 @@ import {
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <BrowserRouter basename={'/3D'}>
+  <BrowserRouter>
     <Routes>
       <Route path="/" element={<App />}>
         <Route index element={<Home />} />
